@@ -17,6 +17,7 @@ class CustomTextField extends StatelessWidget {
     this.enabled,
     this.onChanged,
     this.keyboardType,
+    this.textInputAction,
   });
   final String hint;
   final String? label;
@@ -26,6 +27,7 @@ class CustomTextField extends StatelessWidget {
   final bool? enabled;
   final int? maxLines;
   final TextInputType? keyboardType;
+  final TextInputAction? textInputAction;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
   final void Function(String)? onChanged;
