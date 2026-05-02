@@ -39,8 +39,8 @@ class AppRouter {
         builder: (context, state) => const VerifyView(),
       ),
       GoRoute(
-        path: AppRoutes.forgotPasswordRoute,
-        name: AppRoutes.forgotPasswordRoute,
+        path: AppRoutes.resetPasswordRoute,
+        name: AppRoutes.resetPasswordRoute,
         builder: (context, state) => const ResetPasswordView(),
       ),
       GoRoute(

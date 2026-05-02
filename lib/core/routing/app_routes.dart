@@ -5,7 +5,7 @@ class AppRoutes {
   static const String homeRoute = '/home';
   static const String signupRoute = '/signup';
   static const String verifyRoute = '/verify';
-  static const String forgotPasswordRoute = '/reset-password';
+  static const String resetPasswordRoute = '/reset-password';
   static const String privacyPolicyRoute = '/privacy-policy';
   static const String termsOfServiceRoute = '/terms-of-service';
 }
