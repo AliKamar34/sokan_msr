@@ -64,7 +64,7 @@ class _LoginFormState extends State<LoginForm> {
           ),
           InkWell(
             onTap: () {
-              context.push(AppRoutes.forgotPasswordRoute);
+              context.push(AppRoutes.verifyRoute);
             },
             child: Text(
               AppConstants.forgotPasswordText,
