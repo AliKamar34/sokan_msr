@@ -30,7 +30,7 @@ class CustomContainer extends StatelessWidget {
         color:
             backgroundColor ??
             Theme.of(context).extension<AppColors>()!.whiteColor,
-        borderRadius: BorderRadius.circular(borderRadius ?? 12.r),
+        borderRadius: BorderRadius.circular(borderRadius ?? 32.r),
         border: Border.all(
           width: borderWidth ?? 2,
           color:
