@@ -2,7 +2,7 @@ class AppRoutes {
   static const String splashRoute = '/';
   static const String onboardingRoute = '/onboarding';
   static const String loginRoute = '/login';
-  static const String homeRoute = '/home';
+  static const String navBarRoute = '/home';
   static const String signupRoute = '/signup';
   static const String verifyRoute = '/verify';
   static const String resetPasswordRoute = '/reset-password';
