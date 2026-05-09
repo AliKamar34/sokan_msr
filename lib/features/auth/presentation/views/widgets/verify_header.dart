@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:sokan_msr/core/themes/app_colors.dart';
 import 'package:sokan_msr/core/themes/app_text_style.dart';
 import 'package:sokan_msr/core/widgets/custom_arrow_back_widget.dart';

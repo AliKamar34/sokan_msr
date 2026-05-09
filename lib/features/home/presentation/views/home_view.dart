@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sokan_msr/core/constants/app_assets.dart';
+import 'package:sokan_msr/core/routing/app_routes.dart';
 import 'package:sokan_msr/features/home/data/models/consumption_model.dart';
 import 'package:sokan_msr/features/home/presentation/views/widgets/consumption_analysis_card.dart';
 import 'package:sokan_msr/features/home/presentation/views/widgets/current_bill_card.dart';
@@ -54,7 +56,9 @@ class HomeView extends StatelessWidget {
           HomeHeader(
             userName: 'Ali Kamar',
             userAvatarUrl: 'fake avatar url',
-            onNotificationTap: () {},
+            onNotificationTap: () {
+              context.pushNamed(AppRoutes.notificationsRoute);
+            },
             notificationCount: 1,
           ),
           Padding(

@@ -8,4 +8,5 @@ class AppRoutes {
   static const String resetPasswordRoute = '/reset-password';
   static const String privacyPolicyRoute = '/privacy-policy';
   static const String termsOfServiceRoute = '/terms-of-service';
+  static const String notificationsRoute = '/notifications';
 }

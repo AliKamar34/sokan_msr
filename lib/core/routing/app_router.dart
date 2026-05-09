@@ -7,6 +7,7 @@ import 'package:sokan_msr/features/auth/presentation/views/sign_up_view.dart';
 import 'package:sokan_msr/features/auth/presentation/views/terms_of_service_view.dart';
 import 'package:sokan_msr/features/auth/presentation/views/verify_view.dart';
 import 'package:sokan_msr/features/home/presentation/views/nav_bar_view.dart';
+import 'package:sokan_msr/features/notifications/presentation/views/notifications_view.dart';
 import 'package:sokan_msr/features/start/presentation/views/on_boarding_view.dart';
 import '../../features/start/presentation/views/splash_view.dart';
 
@@ -58,6 +59,11 @@ class AppRouter {
         path: AppRoutes.navBarRoute,
         name: AppRoutes.navBarRoute,
         builder: (context, state) => const NavBarView(),
+      ),
+      GoRoute(
+        path: AppRoutes.notificationsRoute,
+        name: AppRoutes.notificationsRoute,
+        builder: (context, state) => const NotificationsView(),
       ),
     ],
   );
