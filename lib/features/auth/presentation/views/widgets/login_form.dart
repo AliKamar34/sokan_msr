@@ -76,7 +76,7 @@ class _LoginFormState extends State<LoginForm> {
           CustomButton(
             title: AppConstants.signInButtonText,
             onPressed: () {
-              context.push(AppRoutes.homeRoute);
+              context.push(AppRoutes.navBarRoute);
             },
           ),
         ],

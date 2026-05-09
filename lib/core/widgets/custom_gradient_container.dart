@@ -3,13 +3,15 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sokan_msr/core/themes/app_colors.dart';
 
 class CustomGradientContainer extends StatelessWidget {
-  const CustomGradientContainer({super.key, required this.child});
+  const CustomGradientContainer({super.key, required this.child, this.width});
   final Widget child;
+  final double? width;
 
   @override
   Widget build(BuildContext context) {
     final colors = Theme.of(context).extension<AppColors>()!;
     return Container(
+      width: width,
       padding: EdgeInsets.all(24.w),
       decoration: BoxDecoration(
         gradient: LinearGradient(

@@ -30,46 +30,26 @@ class GlassmorphismBottomNav extends StatelessWidget {
         spacing: 16.w,
         children: [
           Expanded(
-            child: Container(
-              height: 64.h,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(32.r),
-                boxShadow: [
-                  BoxShadow(
-                    color: colors.blackTextColor.withAlpha(20),
-                    blurRadius: 50,
-                    offset: const Offset(0, 25),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(32.r),
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+                child: Container(
+                  padding: EdgeInsets.symmetric(horizontal: 16.w),
+                  decoration: BoxDecoration(
+                    color: colors.whiteColor.withAlpha(150),
+                    border: Border.all(color: colors.whiteColor.withAlpha(77)),
+                    borderRadius: BorderRadius.circular(32.r),
                   ),
-                ],
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(32.r),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: colors.whiteColor.withAlpha(150),
-                      border: Border.all(
-                        color: colors.whiteColor.withAlpha(77),
-                      ),
-                      borderRadius: BorderRadius.circular(32.r),
-                    ),
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 39.94.w,
-                        vertical: 0,
-                      ),
-                      child: Row(
-                        spacing: 8.w,
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: List.generate(
-                          items.length,
-                          (index) => NavItem(
-                            item: items[index],
-                            isActive: currentIndex == index,
-                            onTap: () => onItemTapped(index),
-                          ),
-                        ),
+                  child: Row(
+                    spacing: 8.w,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: List.generate(
+                      items.length,
+                      (index) => NavItem(
+                        item: items[index],
+                        isActive: currentIndex == index,
+                        onTap: () => onItemTapped(index),
                       ),
                     ),
                   ),

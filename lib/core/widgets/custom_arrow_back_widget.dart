@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sokan_msr/core/themes/app_colors.dart';
+import 'package:sokan_msr/core/widgets/custom_container.dart';
 
 class CustomArrowBackWidget extends StatelessWidget {
   const CustomArrowBackWidget({super.key});
@@ -10,10 +11,9 @@ class CustomArrowBackWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => context.pop(),
-      child: Container(
-        width: 40.w,
-        height: 40.h,
-        decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+      child: CustomContainer(
+        padding: 8.w,
+        borderColor: Theme.of(context).extension<AppColors>()!.whiteColor,
         child: Icon(
           Icons.arrow_back_ios_new_outlined,
           color: Theme.of(context).extension<AppColors>()!.blackTextColor,

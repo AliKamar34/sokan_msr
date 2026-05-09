@@ -29,19 +29,15 @@ class DividerWithText extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 3.w),
-          child: Container(
-            color: Theme.of(context).extension<AppColors>()!.scaffoldColor,
-            padding: EdgeInsets.symmetric(horizontal: 1.w),
-            child: Text(
-              text,
-              style:
-                  textStyle ??
-                  AppTextStyle.styleMedium14.copyWith(
-                    color: Theme.of(
-                      context,
-                    ).extension<AppColors>()!.greyTextColor,
-                  ),
-            ),
+          child: Text(
+            text,
+            style:
+                textStyle ??
+                AppTextStyle.styleMedium14.copyWith(
+                  color: Theme.of(
+                    context,
+                  ).extension<AppColors>()!.greyTextColor,
+                ),
           ),
         ),
         Expanded(

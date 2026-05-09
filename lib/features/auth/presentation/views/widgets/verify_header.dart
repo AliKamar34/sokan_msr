@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sokan_msr/core/themes/app_colors.dart';
 import 'package:sokan_msr/core/themes/app_text_style.dart';
+import 'package:sokan_msr/core/widgets/custom_arrow_back_widget.dart';
 
 class VerifyHeader extends StatelessWidget {
   const VerifyHeader({super.key});
@@ -13,24 +14,7 @@ class VerifyHeader extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
       child: Row(
         children: [
-          GestureDetector(
-            onTap: () => context.pop(),
-            child: Container(
-              width: 40.w,
-              height: 40.h,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.white,
-              ),
-              child: Center(
-                child: Icon(
-                  Icons.arrow_back_ios_new,
-                  size: 16.sp,
-                  color: Theme.of(context).extension<AppColors>()!.primaryColor,
-                ),
-              ),
-            ),
-          ),
+          CustomArrowBackWidget(),
           SizedBox(width: 16.w),
           Text(
             'Sokan Misr',

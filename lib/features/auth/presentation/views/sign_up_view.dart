@@ -35,7 +35,7 @@ class SignUpView extends StatelessWidget {
               const CreatAccountTextHeaderWidget(),
               const SignUpForm(),
               const SocialLoginSection(),
-              Container(
+              Padding(
                 padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 24.h),
                 child: Center(
                   child: RichText(
